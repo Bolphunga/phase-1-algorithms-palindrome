@@ -1,7 +1,7 @@
 function isPalindrome(word) {
-  const arrWord = word.split("")
-  const newArr = [...arrWord].reverse()
-  const newWord = newArr.join("")
+  const arrayedWord = word.split("")
+  const reversedArray = [...arrayedWord].reverse()
+  const newWord = reversedArray.join("")
   return word == newWord
 }
 
