@@ -1,7 +1,9 @@
+function reverse(word) {
+  return word.split("").reverse().join("")
+}
+
 function isPalindrome(word) {
-  const arrayedWord = word.split("")
-  const reversedArray = [...arrayedWord].reverse()
-  const newWord = reversedArray.join("")
+ const newWord = reverse(word)
   return word == newWord
 }
 
@@ -20,7 +22,7 @@ function isPalindrome(word) {
   Add written explanation of your solution here
 I use the split("") method to separate the string into a new array, then used reverse() to flip their order, then join("") to turn them into a string again.
 I used the if statement first, but turned it into ternary operator, which only works with an unmutated array, hence why I used the spread operator to make a new array, even though we don't really need it.
-
+EDIT: The code is much more optimized now.
 */
 
 // You can run `node index.js` to view these console logs
